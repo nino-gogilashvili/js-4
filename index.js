@@ -3,15 +3,15 @@ let btn = document.querySelectorAll('.dropdown')[1];
 let btnAll = document.querySelectorAll('.dropdown')[0];
 let x = document.querySelectorAll(".dropdown-content")[1];
 let x1 = document.querySelectorAll(".dropdown-content")[0];
-function toggleMenu() {
-    if(btn)
-    x.classList.toggle("open");
-    else if(btnAll)
+function toggleMenu1() {
      x1.classList.toggle('open');
 }
-
+function toggleMenu() {
+    x.classList.toggle("open");
+   
+}
 btn.addEventListener('click', toggleMenu);
-btnAll.addEventListener('click', toggleMenu);
+btnAll.addEventListener('click', toggleMenu1);
 
 /*let btn = document.querySelectorAll('.dropdown');
 let x = document.querySelectorAll(".dropdown-content");
